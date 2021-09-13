@@ -1,0 +1,31 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.health" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "health_walk" ],
+					"transitions" : [
+						{"swimming" : "query.is_swimming > 0.0 && query.is_gliding <= 0.0"},
+						{"error" : "query.is_swimming <= 0.0 && query.is_gliding > 0.0"}
+					]
+				},
+				"swimming" : {
+					"animations" : [ "health_swim" ],
+					"transitions" : [
+						{"default" : "query.is_swimming <= 0.0 && query.is_gliding <= 0.0"},
+						{"error" : "query.is_swimming <= 0.0 && query.is_gliding > 0.0"}
+					]
+				},
+				"error" : {
+					"animations" : [ "health_error" ],
+					"transitions" : [
+						{"default" : "query.is_swimming <= 0.0 && query.is_gliding <= 0.0"},
+						{"swimming" : "query.is_swimming > 0.0 && query.is_gliding <= 0.0"}
+					]
+				}
+			}
+		}
+	}
+}

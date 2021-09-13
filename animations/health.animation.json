@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.walk.health": {
+			"loop": true,
+			"bones": {
+				"health": {
+					"rotation": ["query.rotation_to_camera(0)", "query.rotation_to_camera(1)-query.body_y_rotation", 0],
+					"position": [0, 37, 0]
+				}
+			}
+		},
+		"animation.swim.health": {
+			"loop": true,
+			"bones": {
+				"health": {
+					"rotation": ["query.rotation_to_camera(0)", "query.rotation_to_camera(1)-query.body_y_rotation", 0],
+					"position": [0, 17, 0]
+				}
+			}
+		},
+		"animation.error.health": {
+			"loop": true,
+			"bones": {
+				"health": {
+					"rotation": [0, 0, 0],
+					"position": [0, 99999, 0]
+				}
+			}
+		}
+	}
+}

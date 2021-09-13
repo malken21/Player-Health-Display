@@ -1,0 +1,48 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.health1": {
+
+
+
+      "arrays": {
+        "textures": {
+          "Array.healthbar": [
+            "Texture.health0",
+            "Texture.health1",
+            "Texture.health2",
+            "Texture.health3",
+            "Texture.health4",
+            "Texture.health5",
+            "Texture.health6",
+            "Texture.health7",
+            "Texture.health8",
+            "Texture.health9",
+            "Texture.health10",
+            "Texture.health11",
+            "Texture.health12",
+            "Texture.health13",
+            "Texture.health14",
+            "Texture.health15",
+            "Texture.health16",
+            "Texture.health17",
+            "Texture.health18",
+            "Texture.health19",
+            "Texture.health20"
+          ]
+      }  },
+
+
+
+            "textures": [
+                "Array.healthbar[query.health]"
+            ],
+            "geometry": "geometry.healthbar",
+            "materials": [
+                {
+                    "*": "material.healthbar"
+                }
+            ]
+        }
+    }
+}
